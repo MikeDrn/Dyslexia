@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<script src="interface.js" ></script>
+<style type="text/css">
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("bookbg.png");
+  }
+
+  .box{
+    width: 400px;
+    height: 350px;
+    padding: 5px 5px 40px 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: white;
+    text-align: center;
+    border-radius: 12px;
+    border-color: red;
+    margin-top: -100px;
+  }
+
+  .box .title{
+    position: relative;
+    color: white;
+    font-weight: 500;
+    user-select: none;
+    background: #15927d;
+    padding: 20px 10px;
+    border-radius: 12px;
+    margin-bottom: 10psx;
+  }
+  .bodyInfo
+  {
+    padding-top: 0px;
+  }
+
+
+  .box h6{
+    color: white;
+    position: relative;
+    left: 130px;
+  }
+
+
+  .box input[type="text"],.box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 25px;
+  }
+
+  .box input[type="text"]:focus,.box input[type="password"]:focus{
+    width: 220px;
+    border-color: #15927d;
+  }
+
+  a{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #15927d;
+    padding: 14px 40px;
+    width: 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  a:hover{
+    background: #15927d;
+}
+</style>
+</head>
+
+  <body>
+    <form class="box" method="post" action="#">
+      <h1 class="title">المعلومات الشخصيّة</h1>
+      <div class="bodyInfo">
+        <input type="text" placeholder="اسم الحساب" id="username">
+        <input type="password" placeholder="كلمة السّر" id="password">
+        <a  id="submit">تمّ</a>
+        <p id="incorrect" style="color: red; font-weight: bold;"></p>
+      </div>
+    </form>
+  </body>
+</html>
